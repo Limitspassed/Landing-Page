@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>limitspassed</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section class="showcase">
+    <header>
+      <h2 class="logo">Limitspassed</h2>
+      <div class="toggle"></div>
+    </header>
+    <video src="Abstract.mp4" muted loop autoplay></video>
+    <div class="overlay"></div>
+    <div class="text">
+      <h2>Welcome to</h2>
+      <h3>Limitspassed landing page</h3>
+      <p>To navigate the site and see the other links available please click the menu button on the top right. Thanks for stopping by!</p>
+    </div>
+    <ul class="social">
+      <li><a href="https://www.facebook.com/limitspassed"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+      <li><a href="https://twitter.com/limitspassed"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+    </ul>
+  </section>
+  <div class="menu">
+    <ul>
+	  <li><a href="https://jdb.limitspassed.com/blog">Blog</a></li>
+        <li><a href="https://jdb.limitspassed.com">Portfolio</a></li>
+	  <li><a href="https://auth.limitspassed.com">SSO</a></li>
+    </ul>
+  </div>
+  <script>
+    const menuToggle = document.querySelector('.toggle');
+    const showcase = document.querySelector('.showcase');
+
+      menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('active');
+        showcase.classList.toggle('active');
+      })
+  </script>
+</body>
+</html>
